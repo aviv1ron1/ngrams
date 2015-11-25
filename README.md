@@ -3,7 +3,7 @@ nodejs module for [searching by Ngram](https://en.wikipedia.org/wiki/N-gram) sim
 
 [![npm package](https://nodei.co/npm/ngram-search.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ngram-search/)
 
-##basic usage:
+## basic usage:
 
 ```javascript
 var NGrams = require('ngram-search');
