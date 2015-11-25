@@ -1,0 +1,22 @@
+{
+    "name": "ngrams-search",
+    "version": "0.0.1",
+    "description": "search by Ngram similarity. An emitation of the python NGram module",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/aviv1ron1/ngrams.git"
+    },
+    "author": {
+        "name": "Aviv Ron",
+        "email": "aviv1ron1@gmail.com"
+    },
+    "keywords": [
+        "ngram",
+        "ngrams",
+        "ngram search",
+        "ngrams search",
+        "search"
+    ],
+    "main": "ngrams.js",
+    "license": "MIT"
+}
