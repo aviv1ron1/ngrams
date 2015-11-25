@@ -3,7 +3,8 @@ nodejs module for [searching by Ngram](https://en.wikipedia.org/wiki/N-gram) sim
 
 [![npm package](https://nodei.co/npm/ngram-search.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/ngram-search/)
 
-## basic usage:
+
+## basic usage
 
 ```javascript
 var NGrams = require('ngram-search');
@@ -21,7 +22,17 @@ will output an array of items with similarity greater than threshold ordered by 
     similarity: 0.375
 }]
 */
+
+n.getMaxNgram("spam");    
+/*
+returns the item with the maximum ngram similarity or undefined if none
+{
+    item: "spam",
+    similarity: 1.0
+}
+*/
 ```
+
 ## more usage examples
 ```javascript
 var n = new NGrams(2);  //create ngrams of size 2

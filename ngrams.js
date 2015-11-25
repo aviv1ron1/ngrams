@@ -186,7 +186,7 @@ function arraySort(arr) {
     return arr;
 };
 
-NGram.prototype.search = function(query, threshold) {
+NGram.prototype.compute = function(query, threshold) {
     if (isDefined(threshold)) {
         if (isNaN(threshold)) {
             throw new Error("threshold must be a number between 0 to 1");
@@ -207,7 +207,25 @@ NGram.prototype.search = function(query, threshold) {
             });
         }
     }
+    return res;
+};
+
+NGram.prototype.search = function(query, threshold) {
+    var res = this.compute(query, threshold);
     return arraySort(res);
+};
+
+NGram.prototype.getMaxNgram = function(query) {
+    var res = this.compute(query);
+    var max = 0;
+    var item;
+    for (var i = 0; i < res.length; i++) {
+        if (res[i].similarity > max) {
+            item = res[i];
+            max = item.similarity;
+        }
+    }
+    return item;
 };
 
 module.exports = NGram;

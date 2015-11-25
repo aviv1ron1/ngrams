@@ -187,4 +187,11 @@ n.search("spa", 1 / 4).should.eql([{
     similarity: 1 / 3
 }]);
 
+//// test getMaxNgram
+
+n.getMaxNgram("spa").should.eql({
+    item: "spano",
+    similarity: 1 / 3
+});
+
 console.log("tests done");
