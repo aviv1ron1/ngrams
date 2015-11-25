@@ -55,7 +55,7 @@ returns
   diff: 4         //count of unique ngrams - which do not appear in both items
 }
 */
-n.compare("abe","abc");
+n.compare("abe","abc");         //third argument is warp - optional, default is 1 
 /*
 returns 0.3333333333333333
 formula is: ((distinct ^ warp)-(diff ^ warp))/(distinct^warp)
