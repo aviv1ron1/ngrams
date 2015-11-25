@@ -1,6 +1,6 @@
 {
     "name": "ngrams-search",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "search by Ngram similarity. An emitation of the python NGram module",
     "repository": {
         "type": "git",
